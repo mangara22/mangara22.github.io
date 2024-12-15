@@ -1,23 +1,33 @@
 function countdown() {
-    let countDownDate = new Date(2025, 4, 15, 13).getTime();
+    const graduationDate = new Date(2025, 4, 15, 13);
+    const countdownElement = document.getElementById("cd");
 
-    let countdown = setInterval(() => {
-        // https://www.w3schools.com/howto/howto_js_countdown.asp
-        let currentDate = new Date().getTime();
-        let diff = countDownDate - currentDate;
+    if (!countdownElement) {
+        console.error("Countdown element not found");
+        return;
+    }
+
+    function updateCountdown() {
+        const currentDate = new Date();
+        let diff = graduationDate.getTime() - currentDate.getTime();
+
+        if (diff < 0) {
+            countdownElement.innerHTML = "Graduation day has arrived!";
+            return;
+        }
+
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));
         let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        let result = "Time until graduation (May 15th, 2025): " + days + " day(s) " + hours + " hour(s) " + minutes + " minute(s) " + seconds + " second(s)";
-        document.getElementById("cd").innerHTML = result;
+        countdownElement.innerHTML = `Time until graduation (May 15th, 2025): 
+            ${days} day(s) ${hours} hour(s) ${minutes} minute(s) ${seconds} second(s)`;
+    }
 
-        if (diff < 0) {
-            clearInterval(countdown);
-            document.getElementById("cd").innerHTML = "Countdown is Expired!";
-        }
-    }, 1000)
+    updateCountdown();
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    return () => clearInterval(countdownInterval);
 }
 
-document.addEventListener("load", countdown());
+document.addEventListener('DOMContentLoaded', countdown);
