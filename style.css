@@ -2,7 +2,6 @@
     --bg-dark: #0d1117;
     --bg-light: #161b22;
     --text-light: #ffffff;
-    --text-accent: #ffffff;
     --border-light: #30363d;
     --shadow: rgba(0, 0, 0, 0.6);
 }
@@ -20,21 +19,12 @@ body {
     box-shadow: 0 4px 8px var(--shadow);
 }
 .card-title {
-    color: var(--text-accent);
+    color: var(--text-light);
 }
 footer {
     border-top: 1px solid var(--border-light);
     background-color: var(--bg-light);
 }
-/* .btn-outline-light {
-    border-color: var(--text-light);
-    color: var(--text-light);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-.btn-outline-light:hover {
-    background-color: var(--text-accent);
-    color: var(--bg-dark);
-} */
 #projects .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
