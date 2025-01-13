@@ -22,7 +22,7 @@ function countdown() {
         let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
         countdownElement.innerHTML = `Time until graduation (May 15th, 2025): 
-            ${days} day(s) ${hours} hour(s) ${minutes} minute(s) ${seconds} second(s)`;
+            ${days} day(s) ${hours} hr(s) ${minutes} min(s) ${seconds} sec(s)`;
     }
 
     updateCountdown();
