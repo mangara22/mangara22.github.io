@@ -2,7 +2,7 @@
     --bg-dark: #0d1117;
     --bg-light: #161b22;
     --text-light: #ffffff;
-    --border-light: #30363d;
+    --border-light: #3d4247;
     --shadow: rgba(0, 0, 0, 0.6);
 }
 body {
@@ -15,8 +15,8 @@ body {
 }
 .card {
     background-color: var(--bg-light);
-    border: none;
-    box-shadow: 0 4px 8px var(--shadow);
+    border: 1px solid var(--border-light);
+    /* box-shadow: 0 4px 8px var(--shadow); */
 }
 .card-title {
     color: var(--text-light);
