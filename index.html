@@ -32,9 +32,9 @@
                     <li class="nav-item mx-3">
                         <a class="nav-link fw-bold" href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <!-- <li class="nav-item mx-3">
                         <a class="nav-link fw-bold" href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -49,6 +49,21 @@
         <div class="mx-auto p-4" style="max-width: 700px;">
             <h1 class="card-title text-white">Hello! I'm Michael Angara.</h1>
             <img src="images/me.JPG" class="card-img-top rounded-circle mx-auto d-block mt-3 img-fluid" alt="Me" style="width: 150px; height: 150px; object-fit: cover;">
+
+            <div class="container text-center mt-4" id="contact">
+                <button class="btn btn-outline-light mx-2" 
+                        onclick="window.open('https://www.linkedin.com/in/michaelangara', '_blank')">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </button>
+                <button class="btn btn-outline-light mx-2" 
+                        onclick="window.open('https://github.com/mangara22', '_blank')">
+                    <i class="bi bi-github"></i> GitHub
+                </button>
+                <button class="btn btn-outline-light mx-2" 
+                        onclick="window.location.href='mailto:pmichael.ang@gmail.com'">
+                    <i class="bi bi-envelope-at"></i> Email
+                </button>
+            </div>
         </div>
     </div>
     
@@ -107,7 +122,7 @@
                 <h5 class="card-title">Undergraduate Teaching Assistant</h5>
                 <h6 class="card-subtitle mb-2">University of Minnesota | Jan 2023 - Dec 2024</h6>
                 <ul>
-                    <li>Led 250+ students in labs and office hours to help gain and understand programming languages, tools, and other fundamental CS concepts.</li>
+                    <li>Led 250+ students in labs and office hours to help them understand programming languages, tools, and other fundamental CS concepts.</li>
                     <li>Revised course material, refined unit tests, and updated code templates with a team of 5+ TAs.</li>
                     <li>Courses: Intro to Algorithms and Data Structures (Java), Machine Architecture and Organization (C, x86), Program Design and Development (UML, Java)</li>
                 </ul>
@@ -117,10 +132,10 @@
 
     <div class="container my-4" id="projects">
         <h2 class="text-center card-title m-3"><i class="bi bi-laptop"></i> Projects</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
                 <div class="card h-100 text-white">
-                    <img src="images/websiteshowcase.png" class="card-img-top img-fluid border border-primary" alt="Website Showcase" style="height: 225px;">
+                    <img src="images/websiteshowcase.png" class="card-img-top img-fluid border border-primary" alt="Website Showcase" style="height: 180px;">
                     <div class="card-body" style="min-height: 160px;">
                         <h5 class="card-title">Personal Website</h5>
                         <p class="card-text">A website showcasing my projects and technical skills. Made with Bootstrap CSS.</p>
@@ -135,7 +150,7 @@
     
             <div class="col">
                 <div class="card h-100 text-white">
-                    <img src="images/dronesim.png" class="card-img-top img-fluid border border-info" alt="Drone Simulation" style="height: 225px;">
+                    <img src="images/dronesim.png" class="card-img-top img-fluid border border-info" alt="Drone Simulation" style="height: 180px;">
                     <div class="card-body" style="min-height: 160px;">
                         <h5 class="card-title">Drone Delivery Simulation</h5>
                         <p class="card-text">Worked on an Agile Scrum team to enhance a drone delivery simulation to collect drone data and implement package theft.</p>
@@ -150,10 +165,10 @@
     
             <div class="col">
                 <div class="card h-100 text-white">
-                    <img src="images/cluster.png" class="card-img-top img-fluid border border-success" alt="Spotify Song Clustering" style="height: 225px;">
+                    <img src="images/cluster.png" class="card-img-top img-fluid border border-success" alt="Spotify Song Clustering" style="height: 180px;">
                     <div class="card-body" style="min-height: 160px;">
                         <h5 class="card-title">Spotify Song Clustering</h5>
-                        <p class="card-text">Used 4 different types of clustering (unsupervised ML) to analyze features that makes a song popular from a Spotify dataset.</p>
+                        <p class="card-text">Used 4 different types of clustering (unsupervised ML) to analyze features that makes songs from Spotify popular.</p>
                     </div>
                     <div class="card-footer">
                         <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/ClusteringFinalProject', '_blank')">
@@ -163,7 +178,7 @@
                 </div>
             </div>
     
-            <div class="col">
+            <!-- <div class="col">
                 <div class="card h-100 text-white">
                     <img src="images/tsz.png" class="card-img-top img-fluid border border-warning" alt="Text Safari Zone Gameplay" style="height: 225px;">
                     <div class="card-body" style="min-height: 160px;">
@@ -178,16 +193,14 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> -->
     
             <div class="col">
                 <div class="card h-100 text-white">
-                    <img src="images/tszv2GUI.png" class="card-img-top img-fluid border border-danger" alt="Safari Zone GUI" style="height: 225px;">
+                    <img src="images/tszv2GUI.png" class="card-img-top img-fluid border border-danger" alt="Safari Zone GUI" style="height: 180px;">
                     <div class="card-body" style="min-height: 160px;">
-                        <h5 class="card-title">Safari Zone v2</h5>
-                        <p class="card-text">An improved CLI and design of my Safari Zone along with a GUI implementation of it too. Also used 
-                            <a href="https://github.com/mangara22/PokemonWebScraping" target="_blank" rel="noopener noreferrer">web scraping</a> to collect Pokémon data and wrote 
-                            <a href="https://mangara22.github.io/TSZv2/package-summary.html" target="_blank" rel="noopener noreferrer">documentation</a>.</p>
+                        <h5 class="card-title">TSZv2</h5>
+                        <p class="card-text">A CLI and GUI design of a past implementation of the Safari Zone from Pokémon.</p>
                     </div>
                     <div class="card-footer">
                         <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/TSZv2', '_blank')">
@@ -197,7 +210,7 @@
                 </div>
             </div>
     
-            <div class="col">
+            <!-- <div class="col">
                 <div class="card h-100 text-white">
                     <img src="images/hashtable.png" class="card-img-top img-fluid border border-white" alt="HashTable Example" style="height: 225px;">
                     <div class="card-body" style="min-height: 160px;">
@@ -211,11 +224,18 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <div class="container my-4 text-center">
+        <div class="card p-3" style="border-radius: 12px;">
+            <h3 class="card-title text-center"><i class="bi bi-clock"></i> Live Countdown</h3>
+            <p class="card-text text-center text-white" id="cd"></p>
+        </div>
+    </div>
+
+    <!-- <div class="container my-4 text-center">
         <div class="row row-cols-1 row-cols-md-2 g-3">
             <div class="col">
                 <div class="card p-3 text-white h-100" style="border-radius: 12px;">
@@ -244,7 +264,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <footer class="pt-2 pb-3">
         <div class="container text-center">
