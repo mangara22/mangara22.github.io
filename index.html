@@ -26,15 +26,18 @@
     
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-3">
-                        <a class="nav-link fw-bold" href="index.html">Home</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="https://www.linkedin.com/in/michaelangara" target="_blank" rel="noopener noreferrer">
+                            LinkedIn</a>
                     </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link fw-bold" href="#projects">Projects</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="https://github.com/mangara22" target="_blank" rel="noopener noreferrer">
+                            GitHub</a>
                     </li>
-                    <!-- <li class="nav-item mx-3">
-                        <a class="nav-link fw-bold" href="#contact">Contact</a>
-                    </li> -->
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="mailto:pmichael.ang@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Email</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -50,7 +53,7 @@
             <h1 class="card-title text-white">Hello! I'm Michael Angara.</h1>
             <img src="images/me.JPG" class="card-img-top rounded-circle mx-auto d-block mt-3 img-fluid" alt="Me" style="width: 150px; height: 150px; object-fit: cover;">
 
-            <div class="container text-center mt-4" id="contact">
+            <!-- <div class="container text-center mt-4" id="contact">
                 <button class="btn btn-outline-light mx-2" 
                         onclick="window.open('https://www.linkedin.com/in/michaelangara', '_blank')">
                     <i class="bi bi-linkedin"></i> LinkedIn
@@ -63,10 +66,10 @@
                         onclick="window.location.href='mailto:pmichael.ang@gmail.com'">
                     <i class="bi bi-envelope-at"></i> Email
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
-    
+
     <div class="container my-4" id="about">
         <div class="card p-3" style="border-radius: 12px;">
             <h2 class="card-title text-center"><i class="bi bi-person-circle"></i> About Me</h2>
@@ -82,7 +85,7 @@
             <div class="col">
                 <div class="card p-3 text-white h-100" style="border-radius: 12px;">
                     <h3 class="card-title text-center"><i class="bi bi-code-slash"></i> Languages</h3>
-                    <p>Java, Python, C/C++, JavaScript, SQL, HTML/CSS, OCaml, LaTeX</p>
+                    <p>Java, Python, C/C++, JavaScript, SQL, HTML/CSS, LaTeX</p>
                 </div>
             </div>
     
@@ -102,30 +105,37 @@
         </div>
     </div>
 
-    <div class="container my-4" id="education">
-        <div class="card p-3" style="border-radius: 12px;">
-            <h2 class="text-center card-title mb-4"><i class="bi bi-mortarboard-fill"></i> Education</h2>
-            <div class="card-body text-white">
-                <h5 class="card-title">Bachelor of Science in Computer Science, Self-Designed Minor in IT Infrastructure</h5>
-                <h6 class="card-subtitle mb-2">University of Minnesota - College of Science and Engineering | Sep. 2021 - May 2025</h6>
-                <ul>
-                    <li>Relevant Coursework: Software Engineering, Databases, Data Science I, Web Development, Foundations of Networking, Data Structures & Algorithms</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-4">
-        <div class="card p-3" style="border-radius: 12px;">
-            <h2 class="text-center card-title"><i class="bi bi-briefcase"></i> Experience</h2>
-            <div class="card-body text-white">
-                <h5 class="card-title">Undergraduate Teaching Assistant</h5>
-                <h6 class="card-subtitle mb-2">University of Minnesota | Jan 2023 - Dec 2024</h6>
-                <ul>
-                    <li>Led 250+ students in labs and office hours to help them understand programming languages, tools, and other fundamental CS concepts.</li>
-                    <li>Revised course material, refined unit tests, and updated code templates with a team of 5+ TAs.</li>
-                    <li>Courses: Intro to Algorithms and Data Structures (Java), Machine Architecture and Organization (C, x86), Program Design and Development (UML, Java)</li>
-                </ul>
+    <div class="container my-2 text-center">
+        <div class="card p-2 text-white" style="border-radius: 12px;">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#exp">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#edu">Education</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane container active" id="exp">
+                    <div class="p-2" style="border-radius: 12px;">
+                        <div class="card-body text-white">
+                            <h5 class="card-title">Undergraduate Teaching Assistant</h5>
+                            <h6 class="card-subtitle mb-2">University of Minnesota | Jan 2023 - Dec 2024</h6>
+                            <!-- <p>Led 250+ students in labs and office hours to help them understand programming languages, tools, and other fundamental CS concepts.</p>
+                            <p>Revised course material, refined unit tests, and updated code templates with a team of 5+ TAs.</p> -->
+                            <p>Courses: Intro to Algorithms and Data Structures (Java), Machine Architecture and Organization (C, x86), Program Design and Development (UML, Java)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container" id="edu">
+                    <div class="p-2" style="border-radius: 12px;">
+                        <div class="card-body text-white">
+                            <h5 class="card-title">Bachelor of Science in Computer Science, Self-Designed Minor in IT Infrastructure</h5>
+                            <h6 class="card-subtitle mb-2">University of Minnesota - College of Science and Engineering | Sep. 2021 - May 2025</h6>
+                            <p>Relevant Coursework: Software Engineering, Databases, Data Science I, Web Development, Foundations of Networking, Data Structures & Algorithms</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -136,13 +146,13 @@
             <div class="col">
                 <div class="card h-100 text-white">
                     <img src="images/websiteshowcase.png" class="card-img-top img-fluid border border-primary" alt="Website Showcase" style="height: 180px;">
-                    <div class="card-body" style="min-height: 180px;">
+                    <div class="card-body" style="min-height: 170px;">
                         <h5 class="card-title">Personal Website</h5>
                         <p class="card-text">You're looking at this! A website showcasing some of my projects and technical skills.</p> <br>
                         <span class="badge text-bg-primary">HTML</span>
                         <span class="badge text-bg-primary">CSS</span>
                         <span class="badge text-bg-primary">Javascript</span>
-                        <span class="badge text-bg-primary">Bootstrap</span>
+                        <span class="badge text-bg-primary">Bootstrap CSS</span>
                         <span class="badge text-bg-primary">Animate.css</span>
                     </div>
                     <div class="card-footer">
@@ -155,15 +165,15 @@
     
             <div class="col">
                 <div class="card h-100 text-white">
-                    <img src="images/dronesim.png" class="card-img-top img-fluid border border-info" alt="Drone Simulation" style="height: 180px;">
-                    <div class="card-body" style="min-height: 180px;">
+                    <img src="images/dronesim.png" class="card-img-top img-fluid border border-primary" alt="Drone Simulation" style="height: 180px;">
+                    <div class="card-body" style="min-height: 170px;">
                         <h5 class="card-title">Drone Delivery Simulation</h5>
                         <p class="card-text">Worked on an Agile Scrum team to enhance a drone delivery simulation to collect drone data and implement package theft.</p>
-                        <span class="badge text-bg-info">C++</span>
-                        <span class="badge text-bg-info">UML</span>
-                        <span class="badge text-bg-info">Agile Scrum</span>
-                        <span class="badge text-bg-info">Jira</span>
-                        <span class="badge text-bg-info">Docker</span>
+                        <span class="badge text-bg-primary">C++</span>
+                        <span class="badge text-bg-primary">UML</span>
+                        <span class="badge text-bg-primary">Agile Scrum</span>
+                        <span class="badge text-bg-primary">Jira</span>
+                        <span class="badge text-bg-primary">Docker</span>
                     </div>
                     <div class="card-footer">
                         <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://hub.docker.com/repository/docker/manga22/drone_sim/general', '_blank')">
@@ -175,13 +185,13 @@
     
             <div class="col">
                 <div class="card h-100 text-white">
-                    <img src="images/cluster.png" class="card-img-top img-fluid border border-success" alt="Spotify Song Clustering" style="height: 180px;">
-                    <div class="card-body" style="min-height: 180px;">
+                    <img src="images/cluster.png" class="card-img-top img-fluid border border-primary" alt="Spotify Song Clustering" style="height: 180px;">
+                    <div class="card-body" style="min-height: 170px;">
                         <h5 class="card-title">Spotify Song Clustering</h5>
                         <p class="card-text">Used 4 different types of clustering (unsupervised ML) to analyze features that makes songs from Spotify popular.</p>
-                        <span class="badge text-bg-success">Python</span>
-                        <span class="badge text-bg-success">Jupyter Notebook</span>
-                        <span class="badge text-bg-success">Machine Learning</span>
+                        <span class="badge text-bg-primary">Python</span>
+                        <span class="badge text-bg-primary">Jupyter Notebook</span>
+                        <span class="badge text-bg-primary">Machine Learning</span>
                     </div>
                     <div class="card-footer">
                         <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/ClusteringFinalProject', '_blank')">
@@ -191,33 +201,16 @@
                 </div>
             </div>
     
-            <!-- <div class="col">
-                <div class="card h-100 text-white">
-                    <img src="images/tsz.png" class="card-img-top img-fluid border border-warning" alt="Text Safari Zone Gameplay" style="height: 225px;">
-                    <div class="card-body" style="min-height: 160px;">
-                        <h5 class="card-title">Safari Zone v1</h5>
-                        <p class="card-text">A version of the Safari Zone from Pokémon as a CLI. This also has a 
-                            <a href="https://mangara22.github.io/TextSafariZoneWebsite/" target="_blank" rel="noopener noreferrer">supplemental website</a>
-                            and is in a <a href="https://hub.docker.com/r/manga22/textsafarizone" target="_blank" rel="noopener noreferrer">Docker container</a>.</p>
-                    </div>
-                    <div class="card-footer">
-                        <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/TextSafariZone', '_blank')">
-                            <i class="bi bi-github"></i> GitHub Repo
-                        </button>
-                    </div>
-                </div>
-            </div> -->
-    
             <div class="col">
                 <div class="card h-100 text-white">
-                    <img src="images/tszv2GUI.png" class="card-img-top img-fluid border border-danger" alt="Safari Zone GUI" style="height: 180px;">
-                    <div class="card-body" style="min-height: 180px;">
+                    <img src="images/tszv2GUI.png" class="card-img-top img-fluid border border-primary" alt="Safari Zone GUI" style="height: 180px;">
+                    <div class="card-body" style="min-height: 170px;">
                         <h5 class="card-title">TSZv2</h5>
                         <p class="card-text">A CLI and GUI design of a past implementation of the Safari Zone from Pokémon.</p> <br>
-                        <span class="badge text-bg-danger">Java</span>
-                        <span class="badge text-bg-danger">Java Swing</span>
-                        <span class="badge text-bg-danger">Web Scraping</span>
-                        <span class="badge text-bg-danger">Javadocs</span>
+                        <span class="badge text-bg-primary">Java</span>
+                        <span class="badge text-bg-primary">Java Swing</span>
+                        <span class="badge text-bg-primary">Web Scraping</span>
+                        <span class="badge text-bg-primary">Javadocs</span>
                     </div>
                     <div class="card-footer">
                         <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/TSZv2', '_blank')">
@@ -226,22 +219,6 @@
                     </div>
                 </div>
             </div>
-    
-            <!-- <div class="col">
-                <div class="card h-100 text-white">
-                    <img src="images/hashtable.png" class="card-img-top img-fluid border border-white" alt="HashTable Example" style="height: 225px;">
-                    <div class="card-body" style="min-height: 160px;">
-                        <h5 class="card-title">HashTable</h5>
-                        <p class="card-text">A CLI of a HashTable. Has some JUnit tests for unit testing and 
-                            <a href="https://hub.docker.com/r/manga22/myhashtable" target="_blank" rel="noopener noreferrer">containerized</a> with Docker.</p>
-                    </div>
-                    <div class="card-footer">
-                        <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/MyHashTable', '_blank')">
-                            <i class="bi bi-github"></i> GitHub Repo
-                        </button>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -251,37 +228,6 @@
             <p class="card-text text-center text-white" id="cd"></p>
         </div>
     </div>
-
-    <!-- <div class="container my-4 text-center">
-        <div class="row row-cols-1 row-cols-md-2 g-3">
-            <div class="col">
-                <div class="card p-3 text-white h-100" style="border-radius: 12px;">
-                    <h3 class="card-title text-center"><i class="bi bi-clock"></i> Live Countdown</h3>
-                    <p class="card-text text-center text-white" id="cd"></p>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card p-3 text-white h-100" style="border-radius: 12px;" id="contact">
-                    <h3 class="card-title text-center"><i class="bi bi-person-lines-fill"></i> Contact</h3>
-                    <div class="container text-center">
-                        <button class="btn btn-outline-light mx-2" 
-                                onclick="window.open('https://www.linkedin.com/in/michaelangara', '_blank')">
-                            <i class="bi bi-linkedin"></i> LinkedIn
-                        </button>
-                        <button class="btn btn-outline-light mx-2" 
-                                onclick="window.open('https://github.com/mangara22', '_blank')">
-                            <i class="bi bi-github"></i> GitHub
-                        </button>
-                        <button class="btn btn-outline-light mx-2" 
-                                onclick="window.location.href='mailto:pmichael.ang@gmail.com'">
-                            <i class="bi bi-envelope-at"></i> Email
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <footer class="pt-2 pb-3">
         <div class="container text-center">
