@@ -8,28 +8,29 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-light);
 }
+.bg-maroon {
+    background-color: rgb(122,0,25);
+    color: #fff;
+}
+.bg-gold {
+    background-color: rgb(255,204,51);
+    color: #222;
+}
+.hr-custom {
+    border: 1px solid var(--border-light);
+    height: 2px;
+    border-radius: 1px;
+    opacity: 1;
+}
+.maroon {
+    border-color: rgb(122,0,25);
+}
+.gold {
+    color: rgb(255,204,51);
+}
 .navbar {
     background-color: var(--bg-light);
     border-bottom: 1px solid var(--border-light);
-}
-.card {
-    background-color: var(--bg-light);
-    border: 1px solid var(--border-light);
-}
-.card-title {
-    color: var(--text-light);
-}
-footer, .card-footer {
-    border-top: 1px solid var(--border-light);
-    background-color: var(--bg-light);
-}
-#projects .card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-#projects .card:hover {
-    transform: scale(1.03);
-    animation: animate__pulse;
-    animation-duration: 0.4s;
 }
 .navbar-nav .nav-link {
     position: relative;
@@ -54,7 +55,29 @@ footer, .card-footer {
 .navbar-nav .nav-link:hover::after {
     width: 100%;
 }
-.nav-pills .nav-link {
+.card {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-light);
+    transition: transform 0.4s ease;
+}
+.card-title {
     color: var(--text-light);
-    font-weight: bold;
+}
+#projects .card:hover {
+    animation: animate__pulse 0.4s;
+    transform: scale(1.03);
+}
+.card-exp:hover {
+    background: linear-gradient(90deg,rgba(0, 65, 163, 1) 15%, rgba(0, 184, 171, 1) 100%);
+    animation: animate__pulse 0.4s;
+    transform: scale(1.03);
+}
+.card-edu:hover {
+    background: linear-gradient(90deg,rgb(137, 0, 27) 25%, rgb(224, 174, 25) 75%);
+    animation: animate__pulse 0.4s;
+    transform: scale(1.03);
+}
+footer, .card-footer {
+    border-top: 1px solid var(--border-light);
+    background-color: var(--bg-light);
 }
