@@ -81,3 +81,15 @@ footer, .card-footer {
     border-top: 1px solid var(--border-light);
     background-color: var(--bg-light);
 }
+
+@keyframes pulse-card {
+    0% {
+        box-shadow: 0 0 0 0 var(--border-light);
+    }
+    50% {
+        box-shadow: 0 0 12px 8px var(--border-light);
+    }
+    100% {
+        box-shadow: 0 0 0 0 var(--border-light);
+    }
+}
