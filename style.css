@@ -67,12 +67,12 @@ body {
     animation: animate__pulse 0.4s;
     transform: scale(1.03);
 }
-.card-exp:hover {
+#exp .card:hover {
     background: linear-gradient(90deg,rgba(0, 65, 163, 1) 15%, rgba(0, 184, 171, 1) 100%);
     animation: animate__pulse 0.4s;
     transform: scale(1.03);
 }
-.card-edu:hover {
+#edu .card:hover {
     background: linear-gradient(90deg,rgb(137, 0, 27) 25%, rgb(224, 174, 25) 75%);
     animation: animate__pulse 0.4s;
     transform: scale(1.03);
