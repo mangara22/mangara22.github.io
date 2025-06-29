@@ -22,12 +22,6 @@ body {
     border-radius: 1px;
     opacity: 1;
 }
-.maroon {
-    border-color: rgb(122,0,25);
-}
-.gold {
-    color: rgb(255,204,51);
-}
 .navbar {
     background-color: var(--bg-light);
     border-bottom: 1px solid var(--border-light);
@@ -67,29 +61,7 @@ body {
     animation: animate__pulse 0.4s;
     transform: scale(1.03);
 }
-#exp .card:hover {
-    background: linear-gradient(90deg,rgba(0, 65, 163, 1) 15%, rgba(0, 184, 171, 1) 100%);
-    animation: animate__pulse 0.4s;
-    transform: scale(1.03);
-}
-#edu .card:hover {
-    background: linear-gradient(90deg,rgb(137, 0, 27) 25%, rgb(224, 174, 25) 75%);
-    animation: animate__pulse 0.4s;
-    transform: scale(1.03);
-}
 footer, .card-footer {
     border-top: 1px solid var(--border-light);
     background-color: var(--bg-light);
-}
-
-@keyframes pulse-card {
-    0% {
-        box-shadow: 0 0 0 0 var(--border-light);
-    }
-    50% {
-        box-shadow: 0 0 12px 8px var(--border-light);
-    }
-    100% {
-        box-shadow: 0 0 0 0 var(--border-light);
-    }
 }
