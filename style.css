@@ -10,20 +10,11 @@ body {
 }
 .bg-maroon {
     background-color: rgb(122,0,25);
-    color: #fff;
-}
-.bg-gold {
-    background-color: rgb(255,204,51);
-    color: #222;
-}
-.hr-custom {
-    border: 1px solid var(--border-light);
-    height: 2px;
-    border-radius: 1px;
-    opacity: 1;
+    color: rgb(255, 200, 35);
 }
 .navbar {
-    background-color: var(--bg-light);
+    background-color: rgba(22, 27, 34, 0.172);
+    backdrop-filter: blur(5px);
     border-bottom: 1px solid var(--border-light);
 }
 .navbar-nav .nav-link {
@@ -49,19 +40,9 @@ body {
 .navbar-nav .nav-link:hover::after {
     width: 100%;
 }
-.card {
-    background-color: var(--bg-light);
-    border: 1px solid var(--border-light);
-    transition: transform 0.4s ease;
-}
 .card-title {
     color: var(--text-light);
 }
-#projects .card:hover {
-    animation: animate__pulse 0.4s;
-    transform: scale(1.03);
-}
-footer, .card-footer {
-    border-top: 1px solid var(--border-light);
+.card, .card-footer {
     background-color: var(--bg-light);
 }
