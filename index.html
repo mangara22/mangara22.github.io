@@ -8,15 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body onload="lastUpdated();">
     
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
-        <div class="container px-5">
+        <div class="container">
             <a class="navbar-brand" href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
-                <img src="images/favicon.ico" alt="Logo Initials" height="32px" class="d-inline-block align-text-top">
+                <img src="images/favicon.ico" alt="Logo" height="32" class="d-inline-block align-text-top">
             </a>
     
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,30 +43,37 @@
         </div>
     </nav>
 
-    <div class="container-fluid text-center p-4" style="position: relative; overflow: hidden;">
+    <div class="container-fluid text-center p-4" style="position: relative; overflow: hidden; border-bottom: 1px solid var(--border-light);">
         <video autoplay muted loop id="hero-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
             <source src="images/mpls.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
-        <div class="mx-auto p-5" style="max-width: 600px;" id="hero">
-            <h1 class="mt-5">Hello! I'm Michael.</h1>
-            <p id="update"></p>
+        <div class="mx-auto p-4" style="max-width: 700px;">
+            <h1>Hello! I'm Michael Angara.</h1>
+            <img src="images/me.JPG" class="card-img-top rounded-circle mx-auto mt-2 img-fluid" alt="Me" style="width: 140px; height: 140px; object-fit: cover;">
         </div>
     </div>
 
-    <div class="container my-4 px-5" id="about">
-        <div class="card p-3 text-white text-center" style="border-radius: 12px;">
-            <h2><i class="bi bi-person-circle"></i> About Me</h2>
-            <p>I am a graduate from the <span class="badge bg-maroon">University of Minnesota</span> with a B.S. in Computer Science and a 
-                self-designed minor in IT Infrastructure. I'm looking to apply my skills in positions related to ML, SWE, IT, etc.
+    <div class="container my-4" id="about">
+        <div class="card p-3" style="border-radius: 12px;">
+            <h2 class="card-title text-center"><i class="bi bi-person-circle"></i> About Me</h2>
+            <p class="text-center text-white">I am a recent graduate from the University of Minnesota with a B.S. in Computer Science and a 
+                self-designed minor in IT Infrastructure. Currently, I am a Data Analytics Intern at Polar Semiconductor, where I apply my skills to
+                improve existing Computer Vision and Image Processing methods.
             </p>
         </div>
     </div>
 
-    <div class="container my-4 px-5">
-        <h2 class="text-center card-title m-3"><i class="bi bi-person-workspace"></i> Experience</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="container my-4 text-center">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card p-3 text-white h-100" style="border-radius: 12px;">
+                    <h3 class="card-title text-center"><i class="bi bi-code-slash"></i> Languages</h3>
+                    <p>Python, Java, C#, C/C++, JavaScript, SQL, HTML/CSS, LaTeX</p>
+                </div>
+            </div>
+    
             <div class="col">
                 <div class="card p-3 h-100 text-white text-center" style="border-radius: 12px;">
                     <h3 class="card-title">
@@ -75,8 +83,8 @@
                     <h6 class="card-subtitle mb-2">Polar Semiconductor 
                         <span class="text-secondary">|</span> <span class="fw-normal">June 2025 - August 2025</span>
                     </h6>
-                    <p>Collected, annotated, and trained YOLO models on 4000+ images to classify defects. Evaluated and improved
-                        models and data pipeline methods to ensure high accuracy and reliability.
+                    <p>Collected, annotated, and trained YOLO models on 4000+ images to correctly detect defects. Evaluated and improved
+                        both models and data pipeline methods to ensure high accuracy and reliability.
                     </p>
                     <p>
                         <span class="badge bg-primary">Computer Vision</span>
@@ -87,75 +95,154 @@
                     </p>
                 </div>
             </div>
-
+    
             <div class="col">
-                <div class="card p-3 h-100 text-white text-center" style="border-radius: 12px;">
-                    <h3 class="card-title">
-                        <img src="images/umncs.jpeg" alt="UMN Comp Sci Logo" class="img-fluid mb-2" style="height: 40px;">
-                        Undergraduate TA
-                    </h3>
-                    <h6 class="card-subtitle mb-2">University of Minnesota 
-                        <span class="text-secondary">|</span> <span class="fw-normal">Jan 2023 - Dec 2024</span>
-                    </h6>
-                    <p>Helped support 400+ students in understanding and practicing core CS languages, tools, and concepts. Revised and tested 
-                        course material, code templates, and unit tests with a team of 5+ TAs.
-                    </p>
-                    <p>
-                        <span class="badge bg-primary">Java</span>
-                        <span class="badge bg-primary">C</span>
-                        <span class="badge bg-primary">Git/GitHub</span>
-                        <span class="badge bg-primary">JUnit</span>
-                        <span class="badge bg-primary">UML</span>
-                    </p>
+                <div class="card p-3 text-white h-100" style="border-radius: 12px;">
+                    <h3 class="card-title text-center"><i class="bi bi-hdd-stack"></i> Others</h3>
+                    <p>Git/GitHub, VSCode, Jupyter Notebook, IntelliJ IDEA, Docker, MySQL, Jira, Visual Studio</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container my-4 px-5">
-        <h2 class="text-center card-title m-3"><i class="bi bi-laptop"></i> Pokémon Projects</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="container my-4">
+        <div class="card p-3 text-white text-center" style="border-radius: 12px;">
+            <h2 class="card-title"><i class="bi bi-person-workspace"></i> Experience</h2>
+
+            <h4 class="card-title">Data Analytics Intern</h4>
+            <h6 class="card-subtitle mb-2">Polar Semiconductor <span class="text-secondary">|</span> <span class="fw-normal">June 2025 - Present</span></h6>
+            <ul class="list-unstyled text-start mx-auto">
+                <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Utilized a variety of Machine Learning techniques to automate processes and improve workflows.</li>
+                <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Worked with C#, .NET, and other industry tools to enhance 
+                    Image Processing and Computer Vision methods.</li>
+            </ul>
+
+            <hr class="hr-custom">
+
+            <h5 class="card-title">Undergraduate Teaching Assistant</h5>
+            <h6 class="card-subtitle mb-2">University of Minnesota <span class="text-secondary">|</span> <span class="fw-normal">Jan 2023 - Dec 2024</span></h6>
+            <ul class="list-unstyled text-start mx-auto">
+                <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Led 250+ students in labs and office hours to help them understand 
+                    programming languages, tools, and core CS concepts.</li>
+                <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Revised course material, refined unit tests, and updated code templates 
+                    with a team of 5+ TAs.</li>
+                <li><i class="bi bi-check-circle me-2"></i><strong>Courses:</strong>
+                    <span class="badge bg-primary mx-1">Algorithms & Data Structures (Java)</span>
+                    <span class="badge bg-primary mx-1">Machine Architecture (C, x86)</span>
+                    <span class="badge bg-primary mx-1">Program Design (UML, Java)</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="card p-3 text-white text-center" style="border-radius: 12px;">
+            <h2 class="card-title"><i class="bi bi-mortarboard"></i> Education</h2>
+            <h5 class="card-title">Bachelor of Science in Computer Science, Self-Designed Minor in IT Infrastructure</h5>
+            <h6 class="card-subtitle mb-2">University of Minnesota - College of Science & Engineering <span class="text-secondary">|</span> <span class="fw-normal">Sep. 2021 - May 2025</span></h6>
+            <p><strong>Relevant Coursework:</strong> 
+                <span class="badge bg-maroon mx-1">Software Engineering</span>
+                <span class="badge bg-gold mx-1">Applied Machine Learning</span>
+                <span class="badge bg-maroon mx-1">Data Science</span>
+                <span class="badge bg-gold mx-1">Databases</span>
+                <span class="badge bg-maroon mx-1">IT Project Management</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="container my-4" id="projects">
+        <h2 class="text-center card-title m-3"><i class="bi bi-laptop"></i> Projects</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
-                <div class="card p-3 h-100 text-white text-center" style="border-radius: 12px;">
-                    <h3 class="card-title">
-                        <img src="images/pokeball.png" alt="Pokéball" class="img-fluid mb-2" style="height: 40px;">
-                        Pokémon Type Classification
-                    </h3>
-                    <p>Created 2 Convolutional Neural Networks to try and predict a Pokémon's type of Water, Fire, or Grass.</p>
-                    <p>
+                <div class="card h-100 text-white">
+                    <img src="images/websiteshowcase.png" class="card-img-top img-fluid border border-primary" alt="Website Showcase" style="height: 190px;">
+                    <div class="card-body" style="min-height: 170px;">
+                        <h5 class="card-title">Personal Website</h5>
+                        <p class="card-text">You're looking at this! A website showcasing some of my projects and technical skills, along with some creativity.</p> <br>
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">Javascript</span>
+                        <span class="badge text-bg-primary">Bootstrap CSS</span>
+                        <span class="badge text-bg-primary">Animate.css</span>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/mangara22.github.io', '_blank')">
+                            <i class="bi bi-github"></i> GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card h-100 text-white">
+                    <img src="images/dronesim.png" class="card-img-top img-fluid border border-primary" alt="Drone Simulation" style="height: 190px;">
+                    <div class="card-body" style="min-height: 170px;">
+                        <h5 class="card-title">Drone Delivery Simulation</h5>
+                        <p class="card-text">Worked on an Agile Scrum team to enhance a drone delivery simulation to collect drone data and implement package theft.</p> <br>
+                        <span class="badge text-bg-primary">C++</span>
+                        <span class="badge text-bg-primary">UML</span>
+                        <span class="badge text-bg-primary">Agile Scrum</span>
+                        <span class="badge text-bg-primary">Jira</span>
+                        <span class="badge text-bg-primary">Docker</span>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://hub.docker.com/repository/docker/manga22/drone_sim/general', '_blank')">
+                            <i class="bi bi-box-seam-fill"></i> Docker Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card h-100 text-white">
+                    <img src="images/preds.png" class="card-img-top img-fluid border border-primary" alt="Pokémon Predictions" style="height: 190px;">
+                    <div class="card-body" style="min-height: 170px;">
+                        <h5 class="card-title">Pokémon Type Classification</h5>
+                        <p class="card-text">Created 2 Convolutional Neural Networks to try and predict a Pokémon's type of Water, Fire, or Grass.</p> <br>
                         <span class="badge text-bg-primary">PyTorch</span>
                         <span class="badge text-bg-primary">Machine Learning</span>
                         <span class="badge text-bg-primary">Neural Networks</span>
-                    </p>
-                    <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/PokemonTypeClassification', '_blank')">
-                        <i class="bi bi-github"></i> GitHub
-                    </button>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/PokemonTypeClassification', '_blank')">
+                            <i class="bi bi-github"></i> GitHub Repo
+                        </button>
+                    </div>
                 </div>
             </div>
-
+    
             <div class="col">
-                <div class="card p-3 h-100 text-white text-center" style="border-radius: 12px;">
-                    <h3 class="card-title">
-                        <img src="images/safariball.png" alt="Safari ball" class="img-fluid mb-2" style="height: 40px;">
-                        TSZv2
-                    </h3>
-                    <p>A CLI and GUI design of a past implementation of the Safari Zone from Pokémon. With a supplemental website.</p>
-                    <p>
+                <div class="card h-100 text-white">
+                    <img src="images/tszv2GUI.png" class="card-img-top img-fluid border border-primary" alt="Safari Zone GUI" style="height: 190px;">
+                    <div class="card-body" style="min-height: 170px;">
+                        <h5 class="card-title">TSZv2</h5>
+                        <p class="card-text">A CLI and GUI design of a past implementation of the Safari Zone from Pokémon. With a supplemental website.</p> <br>
                         <span class="badge text-bg-primary">Java</span>
                         <span class="badge text-bg-primary">Java Swing</span>
                         <span class="badge text-bg-primary">Web Scraping</span>
                         <span class="badge text-bg-primary">Javadocs</span>
-                    </p>
-                    <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/TSZv2', '_blank')">
-                        <i class="bi bi-github"></i> GitHub
-                    </button>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-light w-100" onclick="window.open('https://github.com/mangara22/TSZv2', '_blank')">
+                            <i class="bi bi-github"></i> GitHub Repo
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="p-3">
+    <!-- <div class="container my-4 text-center">
+        <div class="card p-3" style="border-radius: 12px;">
+            <h3 class="card-title text-center"><i class="bi bi-clock"></i> Last Updated</h3>
+            <p class="card-text text-center text-white" id="update"></p>
+        </div>
+    </div> -->
+
+    <footer class="pt-2 pb-3">
         <div class="container text-center">
+            <p class="mt-3" id="update"></p>
             <p>&copy; 2024-2025 Michael Angara. All rights reserved.</p>
         </div>
     </footer>
