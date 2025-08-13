@@ -17,6 +17,9 @@ body {
     backdrop-filter: blur(5px);
     border-bottom: 1px solid var(--border-light);
 }
+.navbar-toggler {
+    border-color: var(--border-light);
+}
 .navbar-nav .nav-link {
     position: relative;
     color: #ffffff;
